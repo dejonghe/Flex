@@ -89,14 +89,14 @@
   {% endif %}
   <aside>
     <div>
-      <a href="{{ SITEURL }}">
+      <a href="{{ SITEURL }}/">
         {% if SITELOGO %}
         <img src="{{ SITELOGO }}" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% else %}
         <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png" alt="{{ SITETITLE }}" title="{{ SITETITLE }}">
         {% endif %}
       </a>
-      <h1><a href="{{ SITEURL }}">{{ SITETITLE }}</a></h1>
+      <h1><a href="{{ SITEURL }}/">{{ SITETITLE }}</a></h1>
 
       {% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
 
@@ -148,7 +148,7 @@
 
     {% if MAIN_MENU %}
     <nav>
-      <a href="{{ SITEURL }}">{{ _('Home') }}</a>
+      <a href="{{ SITEURL }}/">{{ _('Home') }}</a>
 
       {% for title, link in MENUITEMS %}
       <a href="{{ link }}">{{ title }}</a>
